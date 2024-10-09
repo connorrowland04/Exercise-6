@@ -5,20 +5,20 @@ import random
 # Date: 10/02/2024 
 # Exercise 5 - Marathon 
 
-class Player:
+class Marathon:
     def __init__(self,name,position = 0): 
         self.name = name 
         self.position = position 
 
 
 
-class RedPlayer(Player): 
+class RedPlayer(Marathon): 
     def walk(self):
         steps = random.randrange(1,11)
         self.position += steps
 
 
-class BluePlayer(Player):
+class BluePlayer(Marathon):
     def walk(self):
         steps = random.randrange(4,9)
         self.position += steps
