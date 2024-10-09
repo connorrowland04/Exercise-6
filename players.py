@@ -21,7 +21,7 @@ class RedPlayer(Marathon):
 
 class BluePlayer(Marathon):
     def walk(self):
-        steps = random.randrange(4,9)
+        steps = random.randrange(1,11)
         self.position += steps
 
 
