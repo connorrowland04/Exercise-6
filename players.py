@@ -32,7 +32,7 @@ def play_game():
         if x <= 3:
             player_list.append(BluePlayer(f"BluePlayer{x}"))
         else: 
-            player_list.append(RedPlayer(f"RedPlayer{x - 3}"))
+            player_list.append(RedPlayer(f"RedPlayer{x + 3}"))
         x += 1
     turns = 0 
     while True:
@@ -41,6 +41,7 @@ def play_game():
             player.walk()
             if player.position >= 100:
                 return player.name,turns
+
 
 
 
